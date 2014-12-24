@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1487" systemVersion="12A269" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="PlaylistEntryModel" representedClassName="PlaylistEntryModel" syncable="YES">
+        <attribute name="order" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="playlist" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="PlaylistModel" inverseName="playlistEntries" inverseEntity="PlaylistModel" syncable="YES"/>
+        <relationship name="song" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="SongModel" inverseName="playlistEntries" inverseEntity="SongModel" syncable="YES"/>
+    </entity>
+    <entity name="PlaylistModel" representedClassName="PlaylistModel" syncable="YES">
+        <attribute name="iconFileName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="order" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="playlistEntries" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="PlaylistEntryModel" inverseName="playlist" inverseEntity="PlaylistEntryModel" syncable="YES"/>
+    </entity>
+    <entity name="SnipModel" representedClassName="SnipModel" syncable="YES">
+        <attribute name="cuePoint" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="song" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="SongModel" inverseName="snips" inverseEntity="SongModel" syncable="YES"/>
+    </entity>
+    <entity name="SongModel" representedClassName="SongModel" syncable="YES">
+        <attribute name="albumArtFileName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="albumArtURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="audioSource" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="composerFirstName" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="composerFullName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="composerLastName" attributeType="String" syncable="YES"/>
+        <attribute name="composerLastNameInitial" optional="YES" attributeType="String" defaultValueString="-" syncable="YES"/>
+        <attribute name="performer" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="track" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="playlistEntries" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PlaylistEntryModel" inverseName="song" inverseEntity="PlaylistEntryModel" syncable="YES"/>
+        <relationship name="snips" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="SnipModel" inverseName="song" inverseEntity="SnipModel" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="PlaylistEntryModel" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="PlaylistModel" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="SnipModel" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="SongModel" positionX="0" positionY="0" width="0" height="0"/>
+    </elements>
+</model>
