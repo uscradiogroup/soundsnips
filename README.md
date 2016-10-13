@@ -13,10 +13,10 @@ Soundsnips was created by [USC Radio Interactive](http://interactive.uscradiogro
 
 # Credits
 
-- [Chris Mendez](http://www.chrisjmendez.com/) - Producer, brand strategy, product owner, prototype developer.
-- [Grant Kindrick](http://grantkindrick.com/resume/) - Art director, brand identity, UIX design. 
-- [Carly Gillis](http://carlyrosegillis.com/) - Editor, writer, researcher.
-- [Tim Herscovitch](https://timh.bandcamp.com/) - Writer, researcher.
+- [Chris Mendez](https://www.linkedin.com/in/chrisjmendez) - Producer, brand strategy, product owner, prototype developer.
+- [Grant Kindrick](https://www.linkedin.com/in/gkindrick) - Art director, brand identity, UIX design. 
+- [Carly Gillis](https://www.linkedin.com/in/carlyrosegillis) - Editor, writer, researcher.
+- [Tim Herscovitch](https://www.linkedin.com/in/tim-herscovitch-aa763a68) - Writer, researcher.
 - [Matthew D. Nielsen](https://mattnielsen.com) - Writer, researcher.
 - [Albert Diaz](https://www.linkedin.com/in/albert-diaz-0788717a) - Writer, researcher.
 - [Artamata](http://artamata.com/) - iOS Development
